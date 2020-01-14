@@ -1,4 +1,4 @@
-This project was started with [Create React App](https://github.com/facebook/create-react-app). I have been made some changes for start a new project, also I made one version with `react-redux` in other branch, you can see [here](https://github.com/edumoreira1506/reactjs-base/tree/react-redux).
+This project was started with [Create React App](https://github.com/facebook/create-react-app). I have been made some changes for start a new project, in this branch, we have `react-redux` structure.
 
 ## Dependencies
 
@@ -13,6 +13,16 @@ Clone the project.
 ```console
 $ git clone git@github.com:edumoreira1506/reactjs-base.git
 $ cd reactjs-base
+```
+
+Checkout to react-redux branch.
+```console
+$ git checkout --track origin/react-redux
+```
+
+Pull all the changes of this branch.
+```console
+$ git pull origin/react-redux
 ```
 
 Copy the contents of the `.env.example` to `.env` then change with the credentials of your local environment.
