@@ -5,3 +5,8 @@ export const addTodo = todo => ({
   todo
 });
 
+export const removeTodo = todo => ({
+  type: actions.REMOVE_TODO,
+  todo
+})
+
