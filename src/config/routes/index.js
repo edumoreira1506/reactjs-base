@@ -5,12 +5,16 @@ import {
   Switch
 } from 'react-router-dom'
 
-import App from '../pages/App'
+import App from '../../pages/App'
 
-const Routes = () => 
+import PrivateRoute from './PrivateRoute'
+
+const Routes = () =>
   <BrowserRouter>
     <Switch>
       <Route path="/" exact component={App} />
+
+      <PrivateRoute path="/private" exact component={App} />
     </Switch>
   </BrowserRouter>
 
