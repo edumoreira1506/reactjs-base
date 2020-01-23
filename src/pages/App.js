@@ -1,12 +1,20 @@
 import React from 'react';
 import Form from '../components/Form';
 import List from '../components/List';
-import { TodoProvider } from '../context/todo';
+import { TodoProvider, TodoConsumer } from '../context/todo';
 
 const App = () => (
   <TodoProvider>
-    <Form />
-    <List />
+    <TodoConsumer>
+      {
+        ([todos, addTodo, removeTodo]) => (
+          <>
+            <Form addTodo={addTodo} />
+            <List todos={todos} removeTodo={removeTodo} />
+          </>
+        )
+      }
+    </TodoConsumer>
   </TodoProvider>
 )
 

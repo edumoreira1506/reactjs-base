@@ -1,11 +1,7 @@
-import React, { useState, useContext } from 'react';
-import { TodoContext } from '../../context/todo';
+import React, { useState } from 'react';
 
-const Form = () => {
+const Form = ({ addTodo }) => {
   const [todo, setTodo] = useState('');
-  const [, setTodos] = useContext(TodoContext);
-
-  const addTodo = todo => setTodos(prevTodos => [...prevTodos, todo])
 
   return (
     <div>
