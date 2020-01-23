@@ -1,4 +1,4 @@
-This project was started with [Create React App](https://github.com/facebook/create-react-app). I have been made some changes for start a new project, also I made one version with `react-redux` in other branch, you can see [here](https://github.com/edumoreira1506/reactjs-base/tree/react-redux).
+This project was started with [Create React App](https://github.com/facebook/create-react-app). I have been made some changes for start a new project, in this branch, we have `context-api-hooks` structure.
 
 ## Dependencies
 
