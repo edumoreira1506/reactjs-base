@@ -3,9 +3,7 @@ import { TodoContext } from '../../context/todo';
 
 const Form = () => {
   const [todo, setTodo] = useState('');
-  const [, setTodos] = useContext(TodoContext);
-
-  const addTodo = todo => setTodos(prevTodos => [...prevTodos, todo])
+  const [, addTodo] = useContext(TodoContext);
 
   return (
     <div>
