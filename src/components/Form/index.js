@@ -1,0 +1,18 @@
+import React, { useState, useContext } from 'react';
+import { TodoContext } from '../../context/todo';
+
+const Form = () => {
+  const [todo, setTodo] = useState('');
+  const [, setTodos] = useContext(TodoContext);
+
+  const addTodo = todo => setTodos(prevTodos => [...prevTodos, todo])
+
+  return (
+    <div>
+      <input value={todo} onChange={e => setTodo(e.target.value)} />
+      <button type="button" onClick={() => addTodo(todo)}>Adicionar!</button>
+    </div>
+  )
+}
+
+export default Form;
